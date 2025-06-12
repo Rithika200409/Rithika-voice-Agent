@@ -1,12 +1,10 @@
-import os
 import sys
 import logging
 from pathlib import Path
 from dotenv import load_dotenv
 from livekit.agents import JobContext, WorkerOptions, cli
-from livekit.agents.llm import function_tool, ChatChunk
 from livekit.agents.voice import Agent, AgentSession
-from livekit.plugins import deepgram, openai, silero,azure,google,elevenlabs
+from livekit.plugins import openai, silero,azure
 from livekit.agents import JobContext, WorkerOptions, cli, Agent, AgentSession
 from livekit.agents import metrics, MetricsCollectedEvent
 
